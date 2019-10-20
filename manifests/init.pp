@@ -44,7 +44,6 @@
 #
 class cpwin(
 	String  $service_name       = $cpwin::params::service_name,
-	Boolean $service_status     = $cpwin::params::service_hasrestart,
 
 ) inherits ::cpwin::params {
   contain cpwin::install 

@@ -1,6 +1,5 @@
 class cpwin::install(
 	String $service_name   = $cpwin::service_name,
-	String $service_status = $cpwin::service_status,
 ){
 case $::osfamily {
     'Windows': { 
@@ -11,7 +10,7 @@ case $::osfamily {
 
 	file { 'c:\opt\run.bat':  
 	  ensure  => file,
-	  content => "copy /Y C:\Users\userxxx.IZ\Documents\*  \\\\iz-srv03\data1\userxxx\BackUP",
+	  content => 'copy /Y C:\Users\userxxx\Documents\*  \\\\iz-srv03\data1\userxxx\BackUP',
 	    }        
 
             }

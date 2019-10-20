@@ -1,6 +1,5 @@
 class cpwin::params {
 	$service_name    = 'cpwin'
-	$service_status  = true
 
 case $::osfamily {
     'Windows': {
